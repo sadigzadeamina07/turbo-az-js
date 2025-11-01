@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
     <title>Turbo az</title>
 </head>
 
-<body class="bg-[#f9f9fb] relative">
+<body class="bg-[#f9f9fb] pb-20 relative">
     <header>
         <div class="mobil-menu bg-white">
             <div class="menu-head flex items-center justify-between p-2 border border-b-[#eaebf2] pb-2">
@@ -28,8 +27,9 @@
                         <h2>TAP.AZ</h2>
                     </a>
                 </div>
-                <div class="addbutton bg-[#ca1016] mx-1 w-[20px] p-1 flex items-center justify-center  rounded-lg">
-                    <i class="fa-solid fa-plus text-white"></i>
+                <div class="addbutton bg-[#ca1016] mx-2 p-1 flex w-[30px]  items-center justify-center  rounded-full">
+                    <i class="fa-solid fa-plus text-white "></i>
+
                 </div>
             </div>
 
@@ -84,37 +84,43 @@
             <ul class="flex gap-3 justify-between">
                 <li class="border-b border-dotted border-gray-500  "><a href="">Kreditlə</a></li>
                 <li class="border-b border-dotted border-gray-500  "><a href="">Barter</a></li>
-                <li class="border-dotted"><a href=""> Aksesuarlar</a></li>
-                <li class="border-dotted"><a href="">Şinlər</a></li>
-                <li class="border-dotted"><a href=""> İcazə</a></li>
+                <li class="border-b border-dotted border-gray-500  "><a href=""> Aksesuarlar</a></li>
+                <li class="border-b border-dotted border-gray-500  "><a href="">Şinlər</a></li>
+                <li cclass="border-b border-dotted border-gray-500  "><a href=""> İcazə</a></li>
             </ul>
         </div>
-        <div class="alt-menu w-100  bg-white fixed   flex gap-5 bottom-0">
-            <div>
-                <i class="fa-solid fa-house text-red-700"></i>
-                <p class="uppercase">Əsas</p>
-            </div>
 
-            <div>
-                <i class="fa-solid fa-heart"></i>
-                <p class="uppercase">Seçilmişlər</p>
-            </div>
-
-            <div class="addbutton bg-[#ca1016] mx-1 w-[20px] p-1 flex items-center justify-center  rounded-lg">
-                <i class="fa-solid fa-plus text-white"></i>
-                <p class="uppercase">Yeni elan</p>
-            </div>
-            <div class="">
-
-                <i class="fa-solid fa-comment-dots"></i>
-                <p class="uppercase">Mesajlar</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-square-user"></i>
-                <p class="uppercase">Kabinet</p>
-            </div>
-        </div>
     </header>
+    <div class="alt-menu fixed bottom-0  left-0 flex justify-between  w-full bg-white gap-10 px-4 py-3 ">
+
+        <div class="flex flex-col items-center justify-center ">
+            <i class="fa-solid fa-house text-red-700 text-lg"></i>
+            <span class="uppercase mt-1 text-sm">Əsas</span>
+        </div>
+
+        <div class="flex flex-col items-center justify-center ">
+            <i class="fa-solid fa-heart text-gray-500"></i>
+            <p class="uppercase mt-1 text-sm">Seçilmişlər</p>
+        </div>
+        <div class=" flex flex-col items-center">
+            <div class="addbutton bg-[#ca1016] mx-2 p-3 flex w-[30px]  items-center justify-center  rounded-full">
+                <i class="fa-solid fa-plus text-white "></i>
+
+            </div>
+            <p class="uppercase mt-1 text-sm">Yeni elan</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center">
+            <i class="fa-solid fa-comment-dots text-gray-500"></i>
+            <p class="uppercase mt-1 text-sm">Mesajlar</p>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <i class="fa-solid fa-square-user text-gray-500"></i>
+            <p class="uppercase mt-1 text-sm">Kabinet</p>
+
+
+        </div>
+    </div>
     <main>
         <section>
             <p class="text-2xl uppercase">Premium Elanlar</p>
