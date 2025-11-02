@@ -29,3 +29,9 @@ function showcars(oturulendeyer) {
 }
 
 showcars(data)
+function filtermarka() {
+    let yenifiltr = marka.value
+    let filterlenmis = yenifiltr ? data.filter(f => f.brand === yenifiltr) : data;
+    console.log(filterlenmis)
+    showcars(filterlenmis)
+}

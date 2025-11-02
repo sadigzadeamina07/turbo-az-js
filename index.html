@@ -42,7 +42,7 @@
                 <span class="flex items-center gap-3"> <i class="fa-solid fa-car text-[#ca1016] text-sm"></i>
                     <p class="text-sm">Bütün markalar</p>
                 </span>
-                <select class="bg-transparent" id="marka">
+                <select class="bg-transparent" id="marka" onchange="filtermarka()">
                 </select>
             </div>
             <div class="marka flex items-center justify-between">
@@ -51,7 +51,7 @@
                     <i class="fa-solid fa-filter text-[#ca1016] text-sm"></i>
                     <p class="text-sm">Filtlər</p>
                 </span>
-                <select id="marka" class="bg-transparent">
+                <select class="bg-transparent">
                 </select>
             </div>
 
@@ -62,7 +62,7 @@
                 <span class="flex items-center gap-3">
                     <p class="text-base">Moto</p>
                 </span>
-                <select id="marka" class="bg-transparen  appearance-none">
+                <select class="bg-transparen  appearance-none">
 
                 </select>
                 <i class="fa-regular fa-angle-right pointer-events-none"></i>
@@ -71,13 +71,13 @@
 
 
         </div>
-        <div class="marka mt-[10px] flex items-center justify-between mx-auto p-3 bg-white rounded-lg w-[95%]">
+        <div class=" mt-[10px] flex items-center justify-between mx-auto p-3 bg-white rounded-lg w-[95%]">
 
             <span class="flex items-center gap-3">
                 <p class="text-base">Avtokataloq</p>
 
             </span>
-            <select id="marka" class="bg-transparen appearance-none">
+            <select class="bg-transparen appearance-none">
 
             </select>
             <i class="fa-regular fa-angle-right  pointer-events-none"></i>
@@ -121,12 +121,11 @@
     <main>
         <p class="text-lg uppercase w-[95%] mx-auto">Premium Elanlar</p>
         <section class="w-[95%] mx-auto">
-            <div id="carts"class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4"></div>
+            <div id="carts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4"></div>
         </section>
     </main>
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
