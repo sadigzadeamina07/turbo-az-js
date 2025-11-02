@@ -1,6 +1,7 @@
 let  marka=document.getElementById('marka')
+let carts=document.getElementById('carts')
 data.map(item=>
 {
-    marka.innerHTML+=`<option>${item.brand}</option>`
+    marka.innerHTML+=`<option value="${item.brand}">${item.brand}</option>`
 }
 )
