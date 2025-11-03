@@ -14,15 +14,18 @@ function showcars(oturulendeyer) {
     carts.innerHTML = ''
     oturulendeyer.map(item => {
         carts.innerHTML += `
-    <div class="cart">
-    <img src="${item.images}" alt="">
-    <div>
-    <h3>${item.price} AZN</h3>
-    <h4>${item.brand} ${item.model}</h4>
-    <h4>${item.year} ${item.engine}${item.odometer}</h4>
-    <p>${item.dates}</p>
+ <div class="max-w-sm rounded  border border-solid overflow-visible p-3 shadow-lg mx-auto">
+  <div class="px-5 py-4">
+    <img src="${item.images}" alt="" style="height:50vh; width:100%;">
+    <div class="p-3">
+      <h3 class="text-2xl">${item.price} AZN</h3>
+      <h4>${item.brand} ${item.model}</h4>
+      <h4>${item.year} ${item.engine}${item.odometer}</h4>
+      <p>${item.dates}</p>
     </div>
-    </div>
+  </div>
+</div>
+
     `
     }
     )
