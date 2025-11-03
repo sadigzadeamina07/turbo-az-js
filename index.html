@@ -84,7 +84,7 @@
         </div>
         <p class="my-4 w-[95%]   mx-auto">Bugun : <a href="" class="text-blue-500"> 1581 yeni elan </a></p>
         <div class="nav-bar my-4 w-[95%] mx-auto ">
-            <ul class="flex gap-1 justify-between">
+            <ul class="flex gap-1 justify-between lg:flex-nowrap flex-wrap">
                 <li class="border-b border-dotted border-gray-500  "><a href="">Kreditlə</a></li>
                 <li class="border-b border-dotted border-gray-500  "><a href="">Barter</a></li>
                 <li class="border-b border-dotted border-gray-500  "><a href=""> Aksesuarlar</a></li>
@@ -94,36 +94,43 @@
         </div>
 
     </header>
-    <div id="" class="alt-menu  fixed bottom-0  left-0 flex justify-between  w-full bg-white gap-10 px-4 py-3  ">
-        <div class="flex flex-col items-center justify-center ">
+    <div
+        class="alt-menu fixed bottom-0 left-0 flex justify-around sm:justify-between w-full bg-white gap-4 sm:gap-10 px-2 sm:px-4 py-3 z-50">
+        <div class="flex flex-col items-center justify-center">
             <i class="fa-solid fa-house text-red-700 text-lg"></i>
-            <span class="uppercase mt-1 text-sm">Əsas</span>
+            <span class="uppercase mt-1 text-[11px] sm:text-sm">Əsas</span>
         </div>
-        <div class="flex flex-col items-center justify-center ">
+        <div class="flex flex-col items-center justify-center">
             <i class="fa-solid fa-heart text-gray-500"></i>
-            <p class="uppercase mt-1 text-sm">Seçilmişlər</p>
+            <p class="uppercase mt-1 text-[11px] sm:text-sm">Seçilmişlər</p>
         </div>
-        <div class=" flex flex-col items-center">
-            <div class="addbutton bg-[#ca1016] -mt-6 mx-2 p-3 flex w-[40px]  items-center justify-center  rounded-full">
-                <i class="fa-solid fa-plus text-white "></i>
+        <div class="flex flex-col items-center">
+            <div
+                class="addbutton bg-[#ca1016] -mt-5 sm:-mt-6 mx-2 p-3 flex w-[45px] items-center justify-center rounded-full shadow-md">
+                <i class="fa-solid fa-plus text-white"></i>
             </div>
-            <p class="uppercase mt-1 text-sm ">Yeni elan</p>
+            <p class="uppercase mt-1 text-[11px] sm:text-sm">Yeni elan</p>
         </div>
         <div class="flex flex-col items-center justify-center">
             <i class="fa-solid fa-comment-dots text-gray-500"></i>
-            <p class="uppercase mt-1 text-sm">Mesajlar</p>
+            <p class="uppercase mt-1 text-[11px] sm:text-sm">Mesajlar</p>
         </div>
         <div class="flex flex-col items-center justify-center">
             <i class="fa-solid fa-square-user text-gray-500"></i>
-            <p class="uppercase mt-1 text-sm">Kabinet</p>
+            <p class="uppercase mt-1 text-[11px] sm:text-sm">Kabinet</p>
         </div>
     </div>
+
     <main>
         <p class="text-lg uppercase w-[95%] mx-auto">Premium Elanlar</p>
-        <section class="w-[95%] mx-auto">
-            <div id="carts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4"></div>
+        <section class="lg:w-[95%] w-full  mx-auto">
+            <div id="carts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-xl shadow w-full sm:w-auto">
+                </div>
+            </div>
         </section>
-        <div class="w-[93%] m-auto border rounded p-3 shadow-lg bg-white     overflow-hidden">
+
+        <div class="w-[93%]  my-[50px] mx-auto border rounded p-3 shadow-lg bg-white     overflow-hidden">
             <div class="h-[50vh] w-full bg-center bg-cover rounded" style="background-image:url('img/phone.png');">
             </div>
             <div class="my-3">
@@ -169,14 +176,16 @@
                 <a href="" class="font-bold">(012) 526-47-47</a>
                 <p>İş saatları — Həftə içi: 09:00-19:00 | Şənbə: 09:00-13:00</p>
                 <div>
-                    <i class="fa-solid fa-envelope text-[#eceff6]"></i>
-                    <i class="fa-brands fa-facebook-f text-[#eceff6]"></i>
-                    <i class="fa-brands fa-instagram text-[#eceff6]"></i>
+                    <i class="fa-solid fa-envelope text-[#eceff6] border   bg-gray-500 p-3 rounded-full  "></i>
+                    <i
+                        class="fa-brands fa-facebook-f text-[#eceff6]  border   bg-gray-500 py-[13px] px-[17px] rounded-full"></i>
+                    <i class="fa-brands fa-instagram text-[#eceff6]  border   bg-gray-500 p-3 rounded-full"></i>
                 </div>
             </div>
             <div class="py-[25px]   ">
                 <p>Tam versiya <a href="">Русский язык</a></p>
-                <p class="text-[#8d94ad]">Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların məzmununa görə məsuliyyət
+                <p class="text-[#8d94ad]">Saytın Administrasiyası reklam bannerlərinin və yerləşdirilmiş elanların
+                    məzmununa görə məsuliyyət
                     daşımır.</p>
                 <p class="text-[#8d94ad]">© 2006-2025 Digital Classifieds MMC. VÖEN: 1405631661</p>
             </div>
@@ -185,8 +194,7 @@
     </footer>
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
+    </head>
 </body>
 
 </html>
